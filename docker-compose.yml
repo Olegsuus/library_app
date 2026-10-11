@@ -1,0 +1,13 @@
+services:
+  library-app:
+    build: .
+    image: library-desktop-app
+    container_name: library-desktop-app
+    ports:
+      - "6080:6080"
+      - "5900:5900"
+    volumes:
+      - ./reports:/app/reports
+    environment:
+      - REPORT_DIR=/app/reports
+    restart: unless-stopped
