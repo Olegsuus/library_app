@@ -1,3 +1,4 @@
+
 services:
   library-app:
     build: .

@@ -2,8 +2,6 @@ from typing import Any, Iterator
 
 
 class CustomMap:
-
-
     def __init__(self) -> None:
         self._keys: list = []
         self._values: list = []
